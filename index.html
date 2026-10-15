@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการสต๊อก คลินิกเสริมความงาม</title>
+    <meta property="og:title" content="ระบบจัดการสต๊อก คลินิกเสริมความงาม">
+    <meta property="og:description" content="ระบบจัดการสต๊อก คลินิกเสริมความงาม">
+    <meta property="og:image" content="https://raw.githubusercontent.com/thanawadeetit/web-app-Clinic/main/logo.png">
+    
+    <meta property="og:type" content="website">
+    <link rel="icon" href="https://raw.githubusercontent.com/thanawadeetit/web-app-Clinic/main/logo.png" type="image/png">
+    
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/thanawadeetit/web-app-Clinic/main/logo.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f4f4f4;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="app-iframe"></iframe>
+
+    <script>
+        const gasUrl = "https://script.google.com/macros/s/AKfycbwJfE-99zuaxBdk5WWZCE_UHRsY-fWBuMl5CauSySgEAP-JOOUqXEbRIuUh2fTIPAM0oA/exec";
+        const queryString = window.location.search;
+        document.getElementById('app-iframe').src = gasUrl + queryString;
+    </script>
+</body>
+</html>
